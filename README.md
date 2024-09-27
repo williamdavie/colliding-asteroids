@@ -1,2 +1,2 @@
 # Colliding Asteriods
-❈ Using the barnes-hut algorithm to model and collide asteroids. 
+This C++ project models and collides two [rubble piles](https://en.wikipedia.org/wiki/Rubble_pile). The simulation is an N-body problem which traditionally requires $N^2$ force calculations. At high values of $N$ this becomes inefficient and costly. I chose to use the Barnes-Hut Algorithm to improve the efficiency of my simulation, my primary resource was the following webpage: [https://beltoforion.de/en/barnes-hut-galaxy-simulator/](https://beltoforion.de/en/barnes-hut-galaxy-simulator/). The Algorithm uses a tree based approximation scheme which reduces the computational complexity of the problem from $O(N^2)$ to $O(N log N)$:
